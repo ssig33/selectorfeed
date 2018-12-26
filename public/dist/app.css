@@ -1,0 +1,26 @@
+.app , .button{
+  text-align: center;
+}
+
+form, .list {
+  text-align: left !important
+}
+
+.alert{
+  color:red
+}
+
+
+button a{
+  font-size: 4em;
+
+}
+
+#clock{
+  font-size:8em;
+}
+
+
+.hidden{
+  display:none;
+}

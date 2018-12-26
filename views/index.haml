@@ -1,0 +1,41 @@
+-# haml
+!!!
+%title CSS Selector Feed
+%link(href='dist/css/bootstrap.css' rel='stylesheet' type='text/css')
+%link(href='dist/css/bootstrap-theme.css' rel='stylesheet' type='text/css')
+%link(href='dist/app.css' rel='stylesheet' type='text/css')
+%script(src="https://code.jquery.com/jquery.js")
+%script(src='dist/app.js')
+%script(src='dist/js/bootstrap.min.js')
+%meta(charset="utf-8")
+%meta(http-equiv="X-UA-Compatible" content="IE=edge")
+.container
+  .app
+    %h1 Generate Feed from CSS Selector
+    %h2 Create Feed
+    .row
+      .col-md-2=''
+      .col-md-8
+        %form(action='/feed' method='GET' role="form")
+          .form-group
+            %label(for="url") 
+              URL
+              %span.alert *Required
+            %input#url.form-control(name="url")
+          .form-group
+            %label(for="list") 
+              Selector for Articles' List
+              %span.alert *Required
+            %input#list.form-control(name="list")
+          .button
+            %button.btn.btn-primary Submit
+      .col-md-2=''
+    .row
+      .col-md-12
+        %a{href: 'https://twitter.com/ssig33', target: '_blank'} @ssig33
+      .col-md-12
+        %a{href: 'https://github.com/ssig33/selectorfeed', target: '_blank'} source
+
+
+.hidden
+
