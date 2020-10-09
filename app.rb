@@ -47,6 +47,10 @@ end
 
 get '/feed' do
   x = Feed.new(url: params[:url], list: params[:list])
+  if x.articles.count == 0
+    status 404
+    return "No Items Found"
+  end
   rss = RSS::Maker.make('1.0') do |maker|
     maker.channel.about = ''
     maker.channel.title = x.title
