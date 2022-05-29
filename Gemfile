@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 
 ruby '3.1.2'
 
+gem 'rss'
 gem 'builder'
 gem 'haml'
 gem 'mechanize'
