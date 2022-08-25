@@ -1,2 +1,5 @@
 log
 .bundle
+.envrc
+auth.json
+.DS_Store
