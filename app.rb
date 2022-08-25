@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'bundler'
+Bundler.setup
 Bundler.require
 require 'sinatra/reloader' if development?
 require 'timeout'
