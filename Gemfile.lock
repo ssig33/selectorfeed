@@ -6,7 +6,7 @@ GEM
     builder (3.2.4)
     connection_pool (2.4.1)
     domain_name (0.6.20240107)
-    haml (5.2.0)
+    haml (5.2.2)
       temple (>= 0.8.0)
       tilt
     http-cookie (1.0.5)
