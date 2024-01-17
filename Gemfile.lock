@@ -41,8 +41,8 @@ GEM
     rack (2.2.8)
     rack-protection (2.2.0)
       rack
-    rexml (3.2.5)
-    rss (0.2.9)
+    rexml (3.2.6)
+    rss (0.3.0)
       rexml
     ruby2_keywords (0.0.5)
     sinatra (2.2.0)
