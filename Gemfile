@@ -13,3 +13,5 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 
 gem "nkf", "~> 0.1.3"
+
+gem "rubocop", "~> 1.60"

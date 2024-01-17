@@ -8,9 +8,9 @@ require 'timeout'
 require 'rss'
 require 'kconv'
 
-# 記事
-class Article
+class Article # rubocop:todo Style/Documentation
   attr_accessor :url, :title, :body
+
   def initialize(noko, url)
     @url = if !/^http/.match?(noko[:href])
              URI.parse(url).merge(noko[:href]).to_s
@@ -21,8 +21,7 @@ class Article
   end
 end
 
-# フィード
-class Feed
+class Feed # rubocop:todo Style/Documentation
   attr_accessor :key, :url, :list, :article, :title
 
   def initialize(url:, list:)
@@ -48,9 +47,9 @@ end
 
 get '/feed' do
   x = Feed.new(url: params[:url], list: params[:list])
-  if x.articles.count == 0
+  if x.articles.count.zero?
     status 404
-    return "No Items Found"
+    return 'No Items Found'
   end
   rss = RSS::Maker.make('1.0') do |maker|
     maker.channel.about = ''
