@@ -1,41 +1,38 @@
 -# haml
 !!!
 %title CSS Selector Feed
-%link(href='dist/css/bootstrap.css' rel='stylesheet' type='text/css')
-%link(href='dist/css/bootstrap-theme.css' rel='stylesheet' type='text/css')
-%link(href='dist/app.css' rel='stylesheet' type='text/css')
-%script(src="https://code.jquery.com/jquery.js")
-%script(src='dist/app.js')
-%script(src='dist/js/bootstrap.min.js')
+<link ref="stylesheet" href="https://unpkg.com/normalize.css/normalize.css" type="text/css" />
+<link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css" />
 %meta(charset="utf-8")
 %meta(http-equiv="X-UA-Compatible" content="IE=edge")
-.container
-  .app
-    %h1 Generate Feed from CSS Selector
-    %h2 Create Feed
-    .row
-      .col-md-2=''
-      .col-md-8
-        %form(action='/feed' method='GET' role="form")
-          .form-group
-            %label(for="url") 
-              URL
-              %span.alert *Required
-            %input#url.form-control(name="url")
-          .form-group
-            %label(for="list") 
-              Selector for Articles' List
-              %span.alert *Required
-            %input#list.form-control(name="list")
-          .button
-            %button.btn.btn-primary Submit
-      .col-md-2=''
-    .row
-      .col-md-12
-        %a{href: 'https://twitter.com/ssig33', target: '_blank'} @ssig33
-      .col-md-12
-        %a{href: 'https://github.com/ssig33/selectorfeed', target: '_blank'} source
+%div
+  %h1 Generate Feed from CSS Selector
+  %h2 Create Feed
+  %div
+    %form(action='/feed' method='GET' role="form")
+      %p
+        %label(for="url") 
+          URL
+          %span.alert *Required
+        %input#url(name="url" placeholder="https://ascii.jp/serialarticles/132740/")
+      %p
+        %label(for="list") 
+          Selector for Articles' List
+          %span.alert *Required
+        %input#list(name="list" placeholder="li h2 a")
+      %p
+        %button Submit
+  %footer(style="margin-top: 20px;")
+    %p
+      %a{href: 'https://twitter.com/ssig33', target: '_blank'} @ssig33
+      %br
+      %a{href: 'https://github.com/ssig33/selectorfeed', target: '_blank'} source
 
 
-.hidden
-
+:css
+  .alert{
+    color: red;
+  }
+  input{
+    width: 100%;
+  }

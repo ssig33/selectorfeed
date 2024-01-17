@@ -46,6 +46,12 @@ get '/' do
 end
 
 get '/feed' do
+  if params[:url].empty? && params[:list].empty?
+    status 404
+    # rubocop:todo Layout/LineLength
+    return redirect "/feed?url=#{CGI.escape('https://ascii.jp/serialarticles/132740/')}&list=#{CGI.escape('li h2 a')}"
+    # rubocop:enable Layout/LineLength
+  end
   x = Feed.new(url: params[:url], list: params[:list])
   if x.articles.count.zero?
     status 404
