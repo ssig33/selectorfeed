@@ -35,6 +35,7 @@ GEM
     net-http-persistent (4.0.2)
       connection_pool (~> 2.2)
     nio4r (2.7.0)
+    nkf (0.1.3)
     nokogiri (1.16.0)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
@@ -75,6 +76,7 @@ DEPENDENCIES
   builder
   haml
   mechanize
+  nkf (~> 0.1.3)
   puma
   rss
   sinatra

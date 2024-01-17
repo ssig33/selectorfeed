@@ -11,3 +11,5 @@ gem 'mechanize'
 gem 'puma'
 gem 'sinatra'
 gem 'sinatra-contrib'
+
+gem "nkf", "~> 0.1.3"
