@@ -12,7 +12,7 @@ gem 'puma'
 gem 'sinatra'
 gem 'sinatra-contrib'
 
-gem "nkf", "~> 0.1.3"
+gem "nkf", "~> 0.2.0"
 
 gem "rubocop", "~> 1.60"
 
