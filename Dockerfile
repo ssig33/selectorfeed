@@ -1,4 +1,4 @@
-FROM --platform=linux/x86_64 ruby:3.3.1
+FROM --platform=linux/x86_64 ruby:3.3.2
 RUN gem install foreman
 WORKDIR /app
 COPY Gemfile Gemfile.lock ./
