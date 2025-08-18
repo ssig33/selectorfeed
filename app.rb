@@ -46,7 +46,7 @@ get '/' do
 end
 
 get '/feed' do # rubocop:todo Metrics/BlockLength
-  if params[:url].empty? && params[:list].empty?
+  if params[:url].nil? || params[:url].empty? || params[:list].nil? || params[:list].empty?
     status 404
     return redirect "/feed?url=#{CGI.escape('https://ascii.jp/serialarticles/132740/')}&list=#{CGI.escape('li h2 a')}"
   end
