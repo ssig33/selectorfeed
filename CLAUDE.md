@@ -1,0 +1,2 @@
+- use English on this Project.
+- this is a ruby and sinatra project.
