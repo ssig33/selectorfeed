@@ -7,6 +7,8 @@ require 'sinatra/reloader' if development?
 require 'timeout'
 require 'rss'
 require 'kconv'
+require 'httparty'
+require 'nokogiri'
 
 class Article # rubocop:todo Style/Documentation
   attr_accessor :url, :title, :body
@@ -31,13 +33,15 @@ class Feed # rubocop:todo Style/Documentation
   end
 
   def articles
-    alice = Mechanize.new
-    page = alice.get @url
-    page.search(@list).map { |x| Article.new(x, @url) }
+    response = HTTParty.get(@url)
+    doc = Nokogiri::HTML(response.body)
+    doc.css(@list).map { |x| Article.new(x, @url) }
   end
 
   def fetch_title
-    @title = Mechanize.new.get(url).search('title').text
+    response = HTTParty.get(url)
+    doc = Nokogiri::HTML(response.body)
+    @title = doc.css('title').text
   end
 end
 

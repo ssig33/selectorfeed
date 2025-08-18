@@ -7,7 +7,6 @@ ruby '3.4.4'
 gem 'rss'
 gem 'builder'
 gem 'haml'
-gem 'mechanize'
 gem 'puma'
 gem 'sinatra'
 gem 'sinatra-contrib'
@@ -23,3 +22,6 @@ gem "webmock", "~> 3.25", group: :test
 gem "rack-test", "~> 2.2", group: :test
 
 gem "rake", "~> 13.3"
+
+gem "httparty", "~> 0.23.1"
+gem "nokogiri", "~> 1.18"

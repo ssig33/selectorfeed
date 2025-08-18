@@ -4,61 +4,43 @@ GEM
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
     ast (2.4.3)
-    base64 (0.2.0)
+    base64 (0.3.0)
     bigdecimal (3.2.2)
     builder (3.3.0)
-    connection_pool (2.5.0)
     crack (1.0.0)
       bigdecimal
       rexml
-    domain_name (0.6.20240107)
+    csv (3.3.5)
     haml (6.3.0)
       temple (>= 0.8.2)
       thor
       tilt
     hashdiff (1.2.0)
-    http-cookie (1.0.8)
-      domain_name (~> 0.5)
+    httparty (0.23.1)
+      csv
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
     json (2.10.2)
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
-    logger (1.6.1)
-    mechanize (2.14.0)
-      addressable (~> 2.8)
-      base64
-      domain_name (~> 0.5, >= 0.5.20190701)
-      http-cookie (~> 1.0, >= 1.0.3)
-      mime-types (~> 3.3)
-      net-http-digest_auth (~> 1.4, >= 1.4.1)
-      net-http-persistent (>= 2.5.2, < 5.0.dev)
-      nkf
-      nokogiri (~> 1.11, >= 1.11.2)
-      rubyntlm (~> 0.6, >= 0.6.3)
-      webrick (~> 1.7)
-      webrobots (~> 0.1.2)
-    mime-types (3.6.0)
-      logger
-      mime-types-data (~> 3.2015)
-    mime-types-data (3.2025.0107)
-    mini_portile2 (2.8.8)
+    logger (1.7.0)
+    mini_mime (1.1.5)
     minitest (5.25.5)
     multi_json (1.15.0)
+    multi_xml (0.7.2)
+      bigdecimal (~> 3.1)
     mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
-    net-http-digest_auth (1.4.1)
-    net-http-persistent (4.0.5)
-      connection_pool (~> 2.2)
     nio4r (2.7.4)
     nkf (0.2.0)
-    nokogiri (1.18.8)
-      mini_portile2 (~> 2.8.2)
+    nokogiri (1.18.9-x86_64-linux-gnu)
       racc (~> 1.4)
     parallel (1.27.0)
     parser (3.3.8.0)
       ast (~> 2.4.1)
       racc
     prism (1.4.0)
-    public_suffix (5.1.1)
+    public_suffix (6.0.2)
     puma (6.6.0)
       nio4r (~> 2.0)
     racc (1.8.1)
@@ -96,8 +78,6 @@ GEM
       prism (~> 1.4)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
-    rubyntlm (0.6.5)
-      base64
     sinatra (4.1.1)
       logger (>= 1.6.0)
       mustermann (~> 3.0)
@@ -119,18 +99,17 @@ GEM
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
-    webrick (1.9.1)
-    webrobots (0.1.2)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
   builder
   haml
-  mechanize
+  httparty (~> 0.23.1)
   minitest (~> 5.25)
   nkf (~> 0.2.0)
+  nokogiri (~> 1.18)
   puma
   rack-test (~> 2.2)
   rackup (~> 2.1)
