@@ -11,7 +11,7 @@ GEM
       bigdecimal
       rexml
     csv (3.3.5)
-    haml (7.0.1)
+    haml (7.0.2)
       temple (>= 0.8.2)
       thor
       tilt
