@@ -25,7 +25,7 @@ GEM
     lint_roller (1.1.0)
     logger (1.7.0)
     mini_mime (1.1.5)
-    minitest (5.26.2)
+    minitest (5.27.0)
     multi_json (1.17.0)
     multi_xml (0.7.2)
       bigdecimal (~> 3.1)
