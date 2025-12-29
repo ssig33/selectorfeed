@@ -17,7 +17,7 @@ gem "rubocop", "~> 1.60"
 
 gem "rackup", "~> 2.1"
 
-gem "minitest", "~> 5.25", group: :test
+gem "minitest", "~> 6.0", group: :test
 gem "webmock", "~> 3.25", group: :test
 gem "rack-test", "~> 2.2", group: :test
 
