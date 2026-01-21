@@ -31,7 +31,7 @@ GEM
       bigdecimal (>= 3.1, < 5)
     mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
-    nio4r (2.7.4)
+    nio4r (2.7.5)
     nkf (0.2.0)
     nokogiri (1.18.9-x86_64-linux-gnu)
       racc (~> 1.4)
@@ -41,7 +41,7 @@ GEM
       racc
     prism (1.7.0)
     public_suffix (6.0.2)
-    puma (7.1.0)
+    puma (7.2.0)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.4)
