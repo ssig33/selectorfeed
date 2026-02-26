@@ -38,7 +38,7 @@ GEM
       ruby2_keywords (~> 0.0.1)
     nio4r (2.7.5)
     nkf (0.2.0)
-    nokogiri (1.18.9-x86_64-linux-gnu)
+    nokogiri (1.19.1-x86_64-linux-gnu)
       racc (~> 1.4)
     parallel (1.27.0)
     parser (3.3.10.2)
@@ -115,7 +115,7 @@ DEPENDENCIES
   httparty (~> 0.24.0)
   minitest (~> 5.25)
   nkf (~> 0.2.0)
-  nokogiri (~> 1.18)
+  nokogiri (~> 1.19)
   puma
   rack-test (~> 2.2)
   rackup (~> 2.1)
