@@ -24,4 +24,4 @@ gem "rack-test", "~> 2.2", group: :test
 gem "rake", "~> 13.3"
 
 gem "httparty", "~> 0.24.0"
-gem "nokogiri", "~> 1.18"
+gem "nokogiri", "~> 1.19"
