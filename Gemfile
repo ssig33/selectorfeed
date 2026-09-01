@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '3.4.9'
+ruby '3.4.10'
 
 gem 'rss'
 gem 'builder'
@@ -11,7 +11,7 @@ gem 'puma'
 gem 'sinatra'
 gem 'sinatra-contrib'
 
-gem "nkf", "~> 0.2.0"
+gem "nkf", "~> 0.3.0"
 
 gem "rubocop", "~> 1.60"
 
