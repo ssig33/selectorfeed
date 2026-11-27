@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '3.4.9'
+ruby '3.4.13'
 
 gem 'rss'
 gem 'builder'
@@ -11,7 +11,7 @@ gem 'puma'
 gem 'sinatra'
 gem 'sinatra-contrib'
 
-gem "nkf", "~> 0.2.0"
+gem "nkf", "~> 0.3.0"
 
 gem "rubocop", "~> 1.60"
 
@@ -23,5 +23,5 @@ gem "rack-test", "~> 2.2", group: :test
 
 gem "rake", "~> 13.3"
 
-gem "httparty", "~> 0.24.0"
+gem "httparty", "~> 0.25.0"
 gem "nokogiri", "~> 1.18"
